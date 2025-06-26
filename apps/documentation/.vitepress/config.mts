@@ -52,7 +52,7 @@ export default defineConfig({
         },
 
         socialLinks: [
-            { icon: "github", link: "https://github.com/vosa53/jsonpath-tools" }
+            { icon: "github", link: "https://github.com/janjorka/jsonpath-tools" }
         ]
     },
     base: "/jsonpath-tools/"

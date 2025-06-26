@@ -64,7 +64,7 @@ const Sidebar = memo(({
                 </Accordion.Item>
             </Accordion>
             <Divider mt="auto" />
-            <Text p="xs" c="dimmed"><IconPackage size={14} /> The editor component and parser are also available as standalone <Anchor href="https://vosa53.github.io/jsonpath-tools" target="_blank">libraries</Anchor>.</Text>
+            <Text p="xs" c="dimmed"><IconPackage size={14} /> The editor component and parser are also available as standalone <Anchor href="https://janjorka.github.io/jsonpath-tools" target="_blank">libraries</Anchor>.</Text>
             <Divider />
             <Text p="xs" c="dimmed" size="xs">Version: {JSONPATH_TOOLS_VERSION}</Text>
         </Flex>
