@@ -10,13 +10,16 @@
 	"portsAttributes": {
 		"3000": {
 			"label": "JSONPath Playground",
-			"protocol": "https"
+			"protocol": "https",
+			"onAutoForward": "openBrowser"
 		}
-	}
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "yarn install",
+	},
+	"postCreateCommand": [
+		"npm install",
+		"npm run build --workspace @jsonpath-tools/jsonpath",
+		"npm run build --workspace @jsonpath-tools/codemirror-lang-jsonpath",
+		"npm run build --workspace @jsonpath-tools/jsonpath-editor-react"
+	]
 	// Configure tool-specific properties.
-	// "customizations": {},
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+	// "customizations": {}
 }
