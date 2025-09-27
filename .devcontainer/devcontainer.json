@@ -4,22 +4,28 @@
 	"features": {
 		"ghcr.io/devcontainers/features/git-lfs:1": {}
 	},
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"workbench.tree.indent": 40
+			}
+		}
+	},
 	"forwardPorts": [
-		3000
+		3000,
+		4000
 	],
 	"portsAttributes": {
 		"3000": {
 			"label": "JSONPath Playground",
 			"protocol": "https",
 			"onAutoForward": "openBrowser"
+		},
+		"4000": {
+			"label": "JSONPath Tools Documentation",
+			"protocol": "http",
+			"onAutoForward": "openBrowser"
 		}
 	},
-	"postCreateCommand": [
-		"npm install",
-		"npm run build --workspace @jsonpath-tools/jsonpath",
-		"npm run build --workspace @jsonpath-tools/codemirror-lang-jsonpath",
-		"npm run build --workspace @jsonpath-tools/jsonpath-editor-react"
-	]
-	// Configure tool-specific properties.
-	// "customizations": {}
+	"postCreateCommand": "npm install && npm run build --workspace @jsonpath-tools/jsonpath && npm run build --workspace @jsonpath-tools/codemirror-lang-jsonpath && npm run build --workspace @jsonpath-tools/jsonpath-editor-react && npm run typedoc --workspace @jsonpath-tools/documentation"
 }

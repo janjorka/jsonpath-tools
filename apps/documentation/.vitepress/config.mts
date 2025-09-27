@@ -55,5 +55,10 @@ export default defineConfig({
             { icon: "github", link: "https://github.com/janjorka/jsonpath-tools" }
         ]
     },
+    vite: {
+        server: {
+            port: 4000
+        }
+    },
     base: "/jsonpath-tools/"
 });
