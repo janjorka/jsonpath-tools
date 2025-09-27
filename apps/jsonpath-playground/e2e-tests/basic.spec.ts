@@ -1,4 +1,5 @@
-import { test, expect, Page, Locator } from "@playwright/test";
+import { test, expect } from "@playwright/test";
+import type { Page, Locator } from "@playwright/test";
 
 test("Inserts input data, writes a query with autocomplete and checks output", async ({ page }) => {
     await page.goto("/");
