@@ -4,9 +4,9 @@
     "version": "0.4.4-alpha",
     "scripts": {
         "typedoc": "typedoc",
-        "dev": "vitepress dev",
+        "dev": "vitepress dev --host",
         "build": "vitepress build",
-        "preview": "vitepress preview"
+        "preview": "vitepress preview --host"
     },
     "devDependencies": {
         "typedoc": "^0.28.0",

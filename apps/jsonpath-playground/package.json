@@ -4,10 +4,9 @@
     "version": "0.4.4-alpha",
     "type": "module",
     "scripts": {
-        "dev": "vite",
-        "dev-local-network": "vite --host 0.0.0.0",
+        "dev": "vite --host",
         "build": "tsc -b && vite build",
-        "preview": "vite preview",
+        "preview": "vite preview --host",
         "test": "vitest",
         "test:e2e": "playwright test"
     },
@@ -30,7 +29,7 @@
     },
     "devDependencies": {
         "@lezer/generator": "^1.7.2",
-        "@playwright/test": "^1.51.1",
+        "@playwright/test": "^1.55.1",
         "@types/markdown-it": "^14.1.2",
         "@types/node": "^22.13.14",
         "@types/react": "^19.0.10",

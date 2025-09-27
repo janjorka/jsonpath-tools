@@ -58,6 +58,9 @@ export default defineConfig({
     vite: {
         server: {
             port: 4000
+        },
+        preview: {
+            port: 4000
         }
     },
     base: "/jsonpath-tools/"

@@ -21,10 +21,10 @@
         "dist"
     ],
     "scripts": {
-        "dev": "vite",
+        "dev": "vite --host",
         "build": "tsc && vite build",
         "build-data-type-grammar": "lezer-generator --typeScript lib/data-type/data-type.grammar -o lib/data-type/data-type-parser.ts",
-        "preview": "vite preview",
+        "preview": "vite preview --host",
         "test": "vitest",
         "prepublishOnly": "npm run build"
     },
