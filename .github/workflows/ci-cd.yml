@@ -37,7 +37,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Install Playwright browsers
-        run: apt install && npx playwright install chromium --with-deps
+        run: sudo apt install && npx playwright install chromium --with-deps
       - name: Build @jsonpath-tools/jsonpath
         run: npm run build --workspace @jsonpath-tools/jsonpath
       - name: Build @jsonpath-tools/codemirror-lang-jsonpath
