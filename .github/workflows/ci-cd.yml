@@ -88,7 +88,7 @@ jobs:
           node-version: 26
           registry-url: 'https://registry.npmjs.org'
       - name: Install dependencies
-        run: npm install #ci
+        run: npm ci
       - name: Download @jsonpath-tools/jsonpath-playground artifact
         uses: actions/download-artifact@v8
         with:
