@@ -30,7 +30,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 26
           cache: npm
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v4
@@ -85,7 +85,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 26
           registry-url: 'https://registry.npmjs.org'
       - name: Install dependencies
         run: npm ci

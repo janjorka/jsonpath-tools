@@ -172,7 +172,7 @@ export default function CustomFunctionEditor({
                         onClick={documentationToggle}>
                         Documentation
                     </Button>
-                    <Collapse in={documentationOpened}>
+                    <Collapse expanded={documentationOpened}>
                         <MarkdownView markdown={documentationMarkdown} withSpacing />
                     </Collapse>
                 </div>

@@ -12,7 +12,7 @@ export default defineConfig({
     plugins: [
         dts({
             include: ["lib"],
-            rollupTypes: true
+            bundleTypes: true
         }),
         react(),
         libInjectCss()

@@ -1,6 +1,6 @@
 {
     "name": "@jsonpath-tools/jsonpath",
-    "version": "0.4.4-alpha",
+    "version": "0.5.0-alpha",
     "author": "Jan Jörka",
     "license": "MIT",
     "description": "JSONPath (RFC 9535) query evaluation, analysis and editor services.",
@@ -32,9 +32,9 @@
         "uri-js": "^4.4.1"
     },
     "devDependencies": {
-        "typescript": "~5.7.2",
-        "vite": "^6.2.0",
-        "vite-plugin-dts": "^4.5.3",
-        "vitest": "^3.1.2"
+        "typescript": "~6.0.3",
+        "vite": "^8.0.11",
+        "vite-plugin-dts": "^5.0.0",
+        "vitest": "^4.1.5"
     }
 }

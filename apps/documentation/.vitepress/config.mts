@@ -6,6 +6,9 @@ export default defineConfig({
     title: "JSONPath Tools",
     description: "Tools for JSONPath query language.",
     cleanUrls: true,
+    head: [
+        ["link", { rel: "icon", href: "/jsonpath-tools/icon.svg" }]
+    ],
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         nav: [
