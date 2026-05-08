@@ -12,6 +12,8 @@ import { applicationHighlightStyle } from "./application-highlight-style";
 import { applicationKeymap } from "./application-keymap";
 import { applicationThemeCommon, applicationThemeDark, applicationThemeLight } from "./application-theme";
 
+/* eslint-disable react-hooks/refs */
+
 /**
  * CodeMirror code editor component.
  */

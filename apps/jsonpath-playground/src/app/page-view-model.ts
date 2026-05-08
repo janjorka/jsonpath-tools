@@ -123,6 +123,18 @@ export function usePageViewModel() {
     const saveTimeoutRef = useRef<number | null>(null);
     const lastAutoSave = useRef<boolean>(initialApplicationState.settings.autoSave);
 
+    async function run() {
+        try {
+            const result = await getResultRef.current!();
+            setResultPaths(result.paths);
+            setResult(result.nodes);
+            setCurrentResultPathIndex(0);
+        }
+        catch (error) {
+            if (!(error instanceof OperationCancelledError)) throw error;
+        }
+    }
+
     const onCustomFunctionsChanged = useCallback((customFunctions: readonly CustomFunction[]) => {
         sendCustomFunctionsToWorker(customFunctions);
         setCustomFunctions(customFunctions);
@@ -197,18 +209,6 @@ export function usePageViewModel() {
             lastAutoSave.current = settings.autoSave;
         }, 5000);
     }, [customFunctions, settings, queryText, queryArgumentText, queryArgumentTypeRaw, operation, pathType]);
-
-    async function run() {
-        try {
-            const result = await getResultRef.current!();
-            setResultPaths(result.paths);
-            setResult(result.nodes);
-            setCurrentResultPathIndex(0);
-        }
-        catch (error) {
-            if (!(error instanceof OperationCancelledError)) throw error;
-        }
-    }
 
     return {
         onCustomFunctionsChanged,

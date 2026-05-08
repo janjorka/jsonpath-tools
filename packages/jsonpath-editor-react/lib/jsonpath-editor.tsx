@@ -12,6 +12,8 @@ import { jsonpathEditorHighlightStyle } from "./jsonpath-editor-highlight-style"
 import { jsonpathEditorTheme } from "./jsonpath-editor-theme";
 import classes from "./jsonpath-editor.module.css";
 
+/* eslint-disable react-hooks/refs */
+
 /**
  * JSONPath editor compliant with ([RFC 9535](https://datatracker.ietf.org/doc/rfc9535/)).
  */

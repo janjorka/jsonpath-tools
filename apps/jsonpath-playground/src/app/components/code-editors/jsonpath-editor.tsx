@@ -17,6 +17,8 @@ import { NormalizedPath } from "@jsonpath-tools/jsonpath";
 import { applicationHighlightStyle } from "./codemirror/application-highlight-style";
 import { CustomDiagnostics } from "../../models/custom-diagnostics";
 
+/* eslint-disable react-hooks/refs */
+
 /**
  * JSONPath editor component.
  */
