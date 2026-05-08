@@ -35,7 +35,7 @@ jobs:
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v6
       - name: Install dependencies
-        run: rm package-lock.json && npm install #ci
+        run: npm install ci
 #      - name: Install Playwright browsers
 #        run: npx playwright install chromium --with-deps
       - name: Build @jsonpath-tools/jsonpath
