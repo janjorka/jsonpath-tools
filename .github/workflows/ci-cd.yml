@@ -23,17 +23,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
           submodules: recursive
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: 26
           cache: npm
       - name: Setup GitHub Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v6
       - name: Install dependencies
         run: rm package-lock.json && npm install #ci
 #      - name: Install Playwright browsers
@@ -57,7 +57,7 @@ jobs:
           npm run typedoc --workspace @jsonpath-tools/documentation
           npm run build --workspace @jsonpath-tools/documentation
       - name: Upload @jsonpath-tools/jsonpath-playground artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: jsonpath-playground-build
           path: apps/jsonpath-playground/dist/
@@ -78,19 +78,19 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
           submodules: recursive
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: 26
           registry-url: 'https://registry.npmjs.org'
       - name: Install dependencies
         run: npm install #ci
       - name: Download @jsonpath-tools/jsonpath-playground artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: jsonpath-playground-build
           path: apps/jsonpath-playground/dist/
