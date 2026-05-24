@@ -35,7 +35,15 @@ const queryArgument = {
 };
 
 const nodes = JSONPath.select(`$.books[?@.author != null].title`, queryArgument);
+```
+
+Getting the selected values:
+```ts
 const values = nodes.toValues();
+```
+
+Getting paths to the selected values:
+```ts
 const paths = nodes.toNormalizedPaths();
 ```
 
