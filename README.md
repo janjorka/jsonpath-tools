@@ -19,10 +19,12 @@ It has the following parts:
 
 ## Query JSON data
 
+Installation:
 ```sh
 npm install @jsonpath-tools/jsonpath
 ```
 
+Select nodes:
 ```ts
 import { JSONPath } from "@jsonpath-tools/jsonpath";
 
@@ -49,10 +51,11 @@ const paths = nodes.toNormalizedPaths();
 
 ## React JSONPath Editor
 
+Installation:
 ```sh
 npm install @jsonpath-tools/jsonpath-editor-react
 ```
-
+Basic usage:
 ```tsx
 import { useState } from "react";
 import { JSONPathEditor } from "@jsonpath-tools/jsonpath-editor-react";
