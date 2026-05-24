@@ -3,6 +3,6 @@ import viteConfig from "./vite.config";
 
 export default mergeConfig(viteConfig, defineConfig({
     test: {
-        include: ["lib/**/*.spec.ts(x)"]
+        include: ["lib/**/*.spec.ts?(x)"]
     }
 }));
