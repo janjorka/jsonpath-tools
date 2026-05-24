@@ -9,6 +9,7 @@
             "DOM.Iterable"
         ],
         "skipLibCheck": true,
+        "rootDir": "../..",
         /* Bundler mode */
         "moduleResolution": "bundler",
         "allowImportingTsExtensions": true,

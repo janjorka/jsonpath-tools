@@ -37,7 +37,7 @@
         "@codemirror/language": "^6.12.3",
         "@codemirror/lint": "^6.9.6",
         "@codemirror/state": "^6.6.0",
-        "@codemirror/view": "^6.42.1",
+        "@codemirror/view": "^6.43.0",
         "@lezer/highlight": "^1.2.3",
         "@jsonpath-tools/codemirror-lang-jsonpath": "^0.5.0-alpha",
         "@jsonpath-tools/jsonpath": "^0.5.0-alpha"
@@ -47,16 +47,16 @@
         "react-dom": "^19.2.6"
     },
     "devDependencies": {
-        "@types/react": "^19.2.14",
+        "@types/react": "^19.2.15",
         "@types/react-dom": "^19.2.3",
-        "@vitejs/plugin-react-swc": "^4.3.0",
+        "@vitejs/plugin-react-swc": "^4.3.1",
         "@microsoft/api-extractor": "7.58.7",
         "react": "^19.2.6",
         "react-dom": "^19.2.6",
         "typescript": "~6.0.3",
         "vite": "^8.0.11",
-        "vite-plugin-dts": "^5.0.0",
+        "vite-plugin-dts": "^5.0.1",
         "vite-plugin-lib-inject-css": "^2.2.2",
-        "vitest": "^4.1.5"
+        "vitest": "^4.1.7"
     }
 }

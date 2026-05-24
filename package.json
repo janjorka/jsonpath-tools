@@ -6,10 +6,10 @@
     ],
     "devDependencies": {
         "@eslint/js": "^10.0.1",
-        "eslint": "^10.3.0",
+        "eslint": "^10.4.0",
         "eslint-plugin-react-hooks": "^7.1.1",
         "eslint-plugin-react-refresh": "^0.5.2",
-        "typescript-eslint": "^8.59.2"
+        "typescript-eslint": "^8.59.4"
     },
     "scripts": {
         "lint": "eslint packages/*/lib/**/*.{ts,tsx} apps/jsonpath-playground/src/**/*.{ts,tsx}"

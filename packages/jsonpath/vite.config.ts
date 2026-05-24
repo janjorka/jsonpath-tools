@@ -22,7 +22,13 @@ export default defineConfig({
             external: [
                 "jsonpointer", 
                 "uri-js"
-            ]
+            ],
+            output: {
+                globals: {
+                    "jsonpointer": "jsonpointer",
+                    "uri-js": "URI"
+                }
+            }
         },
         copyPublicDir: false
     }

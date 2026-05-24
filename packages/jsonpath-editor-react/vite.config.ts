@@ -37,7 +37,23 @@ export default defineConfig({
                 "@jsonpath-tools/jsonpath",
                 "react",
                 "react/jsx-runtime"
-            ]
+            ],
+            output: {
+                globals: {
+                    "@codemirror/search": "codemirror_search",
+                    "@codemirror/commands": "codemirror_commands",
+                    "@codemirror/autocomplete": "codemirror_autocomplete",
+                    "@codemirror/language": "codemirror_language",
+                    "@codemirror/lint": "codemirror_lint",
+                    "@codemirror/state": "codemirror_state",
+                    "@codemirror/view": "codemirror_view",
+                    "@lezer/highlight": "lezer_highlight",
+                    "@jsonpath-tools/codemirror-lang-jsonpath": "codemirror-lang-jsonpath",
+                    "@jsonpath-tools/jsonpath": "jsonpath",
+                    "react": "React",
+                    "react/jsx-runtime": "React_jsx_runtime"
+                }
+            }
         },
         copyPublicDir: false
     }

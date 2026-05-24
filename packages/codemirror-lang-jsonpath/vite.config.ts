@@ -32,7 +32,22 @@ export default defineConfig({
                 "@lezer/highlight",
                 "@lezer/json",
                 "markdown-it"
-            ]
+            ],
+            output: {
+                globals: {
+                    "@codemirror/autocomplete": "codemirror_autocomplete",
+                    "@codemirror/language": "codemirror_language",
+                    "@codemirror/lint": "codemirror_lint",
+                    "@codemirror/state": "codemirror_state",
+                    "@codemirror/view": "codemirror_view",
+                    "@jsonpath-tools/jsonpath": "jsonpath",
+                    "@lezer/common": "lezer_common",
+                    "@lezer/lr": "lezer_lr",
+                    "@lezer/highlight": "lezer_highlight",
+                    "@lezer/json": "lezer_json",
+                    "markdown-it": "markdownit"
+                }
+            }
         },
         copyPublicDir: false
     }
