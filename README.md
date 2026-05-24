@@ -1,3 +1,7 @@
+- [JSONPath Tools](#jsonpath-tools)
+  - [Query JSON data](#query-json-data)
+  - [React JSONPath Editor](#react-jsonpath-editor)
+
 # JSONPath Tools
 
 [JSONPath Playground](https://jsonpath.dev) | [Documentation](https://janjorka.github.io/jsonpath-tools/)
