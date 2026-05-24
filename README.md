@@ -1,8 +1,13 @@
+# JSONPath Tools
+
+**Table of Contents:**
+
 - [JSONPath Tools](#jsonpath-tools)
+  - [Overview](#overview)
   - [Query JSON data](#query-json-data)
   - [React JSONPath Editor](#react-jsonpath-editor)
 
-# JSONPath Tools
+## Overview
 
 [JSONPath Playground](https://jsonpath.dev) | [Documentation](https://janjorka.github.io/jsonpath-tools/)
 
@@ -49,6 +54,8 @@ Getting paths to the selected values:
 const paths = nodes.toNormalizedPaths();
 ```
 
+[More information](https://janjorka.github.io/jsonpath-tools/documentation/core/get-started)
+
 ## React JSONPath Editor
 
 Installation:
@@ -79,3 +86,5 @@ export default function Example() {
 It should look like this:
 
 ![Expected result](https://janjorka.github.io/jsonpath-tools/assets/react-component.BELZzF-R.png)
+
+[More information](https://janjorka.github.io/jsonpath-tools/documentation/editor/react-component)
