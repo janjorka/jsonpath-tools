@@ -96,9 +96,9 @@ jobs:
           path: apps/jsonpath-playground/dist/
       - name: Deploy Packages to NPM Registry
         run: |
-          npm publish --provenance --access public --tag alpha --workspace @jsonpath-tools/jsonpath
-          npm publish --provenance --access public --tag alpha --workspace @jsonpath-tools/codemirror-lang-jsonpath
-          npm publish --provenance --access public --tag alpha --workspace @jsonpath-tools/jsonpath-editor-react
+          npm publish --provenance --access public --workspace @jsonpath-tools/jsonpath
+          npm publish --provenance --access public --workspace @jsonpath-tools/codemirror-lang-jsonpath
+          npm publish --provenance --access public --workspace @jsonpath-tools/jsonpath-editor-react
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
       - name: Deploy @jsonpath-tools/jsonpath-playground to Cloudflare Pages

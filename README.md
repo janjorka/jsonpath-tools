@@ -62,6 +62,7 @@ Installation:
 ```sh
 npm install @jsonpath-tools/jsonpath-editor-react
 ```
+
 Basic usage:
 ```tsx
 import { useState } from "react";

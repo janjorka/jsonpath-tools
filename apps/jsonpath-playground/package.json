@@ -1,7 +1,7 @@
 {
     "name": "@jsonpath-tools/jsonpath-playground",
     "private": true,
-    "version": "0.5.0-alpha",
+    "version": "1.0.0",
     "type": "module",
     "scripts": {
         "dev": "vite --host",
@@ -14,8 +14,8 @@
         "@codemirror/lang-javascript": "^6.2.5",
         "@codemirror/lang-json": "^6.0.2",
         "@codemirror/lang-markdown": "^6.5.0",
-        "@jsonpath-tools/codemirror-lang-jsonpath": "^0.5.0-alpha",
-        "@jsonpath-tools/jsonpath": "^0.5.0-alpha",
+        "@jsonpath-tools/codemirror-lang-jsonpath": "^1.0.0",
+        "@jsonpath-tools/jsonpath": "^1.0.0",
         "@mantine/core": "^9.2.1",
         "@mantine/form": "^9.2.1",
         "@mantine/hooks": "^9.2.1",
