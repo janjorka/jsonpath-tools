@@ -12,3 +12,51 @@ It has the following parts:
 - [Playground Web Application](https://jsonpath.dev)
 
 ![Image from the JSONPath Playground](https://janjorka.github.io/jsonpath-tools/assets/image.CirRxT7e.png)
+
+## Query JSON data
+
+```sh
+npm install @jsonpath-tools/jsonpath
+```
+
+```ts
+import { JSONPath } from "@jsonpath-tools/jsonpath";
+
+const queryArgument = {
+    books: [
+        { title: "1984", author: "George Orwell" },
+        { title: "Epic of Gilgamesh", author: null },
+        { title: "The Old Man and the Sea", author: "Ernest Hemingway" }
+    ]
+};
+
+const nodes = JSONPath.select(`$.books[?@.author != null].title`, queryArgument);
+const values = nodes.toValues();
+const paths = nodes.toNormalizedPaths();
+```
+
+## React JSONPath Editor
+
+```sh
+npm install @jsonpath-tools/jsonpath-editor-react
+```
+
+```tsx
+import { useState } from "react";
+import { JSONPathEditor } from "@jsonpath-tools/jsonpath-editor-react";
+import { defaultQueryOptions, jsonSchemaToType } from "@jsonpath-tools/jsonpath";
+
+const queryArgumentType = jsonSchemaToType({ schema: queryArgumentSchema });
+
+export default function Example() {
+    const [value, setValue] = useState(`$..inventory.*`);
+    return (
+        <JSONPathEditor
+            value={value}
+            onValueChange={setValue}
+            queryOptions={defaultQueryOptions}
+            queryArgument={queryArgument}
+            queryArgumentType={queryArgumentType} />
+    );
+}
+```
