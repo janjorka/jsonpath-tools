@@ -3,3 +3,7 @@
     --vp-c-brand-2: #b197fc;
     --vp-c-brand-3: #7950f2;
 }
+
+.VPHomeHero .VPImage {
+    border-radius: 12px;
+}

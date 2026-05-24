@@ -5,9 +5,13 @@ layout: home
 hero:
   name: "JSONPath Tools"
   tagline: Tools for JSONPath query language
+  image:
+    light: /hero-light.png
+    dark: /hero-dark.png
+    alt: Hero image
   actions:
     - theme: brand
-      text: Evaluation Quickstart
+      text: Query Quickstart
       link: /documentation/core/get-started
     - theme: brand
       text: Editor Quickstart
