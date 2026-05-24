@@ -75,3 +75,7 @@ export default function Example() {
     );
 }
 ```
+
+It should look like this:
+
+![Expected result](https://janjorka.github.io/jsonpath-tools/assets/react-component.BELZzF-R.png)
