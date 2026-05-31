@@ -1,0 +1,46 @@
+{
+    "name": "@jsonpath-tools/jsonpath-language-server",
+    "version": "1.0.0",
+    "author": "Jan Jörka",
+    "license": "MIT",
+    "description": "Language server for JSONPath (RFC 9535) with completion, diagnostics, hover, formatting and more.",
+    "homepage": "https://janjorka.github.io/jsonpath-tools",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/janjorka/jsonpath-tools",
+        "directory": "packages/jsonpath-language-server"
+    },
+    "type": "module",
+    "main": "dist/index.js",
+    "bin": {
+        "jsonpath-language-server": "./dist/bin.js"
+    },
+    "exports": {
+        "import": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+    },
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "dev": "vite --host",
+        "build": "tsc && vite build",
+        "preview": "vite preview --host",
+        "test": "vitest",
+        "prepublishOnly": "npm run build"
+    },
+    "dependencies": {
+        "@jsonpath-tools/jsonpath": "^1.0.0",
+        "vscode-languageserver": "^9.0.1",
+        "vscode-languageserver-textdocument": "^1.0.12"
+    },
+    "devDependencies": {
+        "@microsoft/api-extractor": "7.58.7",
+        "@types/node": "^22.0.0",
+        "typescript": "~6.0.3",
+        "vite": "^8.0.11",
+        "vite-plugin-dts": "^5.0.1",
+        "vitest": "^4.1.7"
+    }
+}
